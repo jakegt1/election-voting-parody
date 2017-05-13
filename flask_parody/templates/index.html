@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="inner-content">
+<h2 id="title">UNITE AGAINST THE NOT TORIES</h2>
+<h3 id="mission">Most constituencies can only be realistically contested by one party. Well, unless you live in Scotland.</h3>
+<p id="watdo">This site shows which way you should vote on 8th June to prevent the not Tories from getting into power. Ever.</p>
+<select class="selectpicker" id="const">
+	<option value="Header" disabled selected id="choose">Choose your constituency</option>
+	{% for const in consts %}
+		<option>{{const.get("name")}}</option>
+	{% endfor %}
+</select>
+<div id="vote" class="vote">
+</div>
+<div id="why" class="why"></div>
+</div>
+{% endblock %}
