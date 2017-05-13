@@ -18,6 +18,7 @@ $(document).ready(function(){
 		var item = garbageList[Math.floor(Math.random()*garbageList.length)];
 		var voteString = "vote<h1>"+classMap[item["class"]]+"</h1>to stop the not Tories in "+text;
 		vote.html(voteString);
+		document.body.className = "";
 		$("body").addClass(item["class"]);
 		$("#why").html("Why? "+item["text"]);
 	})
