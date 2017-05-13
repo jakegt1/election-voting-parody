@@ -7,7 +7,7 @@
 <select class="selectpicker" id="const">
 	<option value="Header" disabled selected id="choose">Choose your constituency</option>
 	{% for const in consts %}
-		<option>{{const.get("name")}}</option>
+		<option>{{const}}</option>
 	{% endfor %}
 </select>
 <div id="vote" class="vote">
