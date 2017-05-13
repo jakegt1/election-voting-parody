@@ -5,6 +5,7 @@ setup(
     version="0.0.1",
     packages=['flask_parody'],
     include_package_data=True,
+    zip_safe=False,
     install_requires=[
         'flask',
     ],
