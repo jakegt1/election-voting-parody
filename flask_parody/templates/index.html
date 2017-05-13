@@ -4,6 +4,14 @@
 <h2 id="title">UNITE AGAINST THE NOT TORIES</h2>
 <h3 id="mission">Most constituencies can only be realistically contested by one party. Well, unless you live in Scotland.</h3>
 <p id="watdo">This site shows which way you should vote on 8th June to prevent the not Tories from getting into power. Ever.</p>
+<div class="input-group postcode">
+	<input type="text" class="form-control" id="postcode" placeholder="Postcode Search">
+	<span class="input-group-btn">
+		<button id="search" class="btn btn-primary">Go!</button>
+	</span>
+</div>
+<p> Press Enter to calculate the percentage you will beat the not tories.</p>
+<p id="error"></p>
 <select class="selectpicker" id="const">
 	<option value="Header" disabled selected id="choose">Choose your constituency</option>
 	{% for const in consts %}
