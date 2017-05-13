@@ -27,6 +27,9 @@
 	padding: 0 94px 0 94px;
 }
 
+.why {
+	font-size: 17px;
+}
 .vote {
 	text-transform: uppercase;
 	font-family: 'Montserrat', sans-serif;
@@ -40,6 +43,7 @@ h1, h2, h3, h4 {
 }
 
 h1 {
+	margin: 20px 20px;
 	text-transform: uppercase;
 	font-size: 72px;
 }
@@ -84,4 +88,23 @@ body {
 	margin: 0 auto;
 	max-width: 800px;
 }
+
+@media screen and (max-width: 768px) {
+	h1{
+		margin: 10px 10px;
+		font-size:40px;
+	}
+	h2 {
+		font-size:35px;
+		margin: 24px 24px;
+	}
+	h3 {
+		font-size:18px;
+	}
+	p {
+		font-size:13px;
+	}
+}
+
+
 
