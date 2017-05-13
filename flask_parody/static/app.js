@@ -4,21 +4,29 @@ var garbageList = [
 	{"class": "strongandstable", "text": "Because that labour guy ate that bacon sandwich funny once."},
 	{"class": "strongandstable", "text": "Because brexit means brexit, and election means tory government."},
 	{"class": "commies", "text": "Well, it's not going to make any difference anyway. Have you seen the polls? Jesus."},
-	{"class": "commies", "text": "Because McDonnell needs to seize the means of production."}
+	{"class": "commies", "text": "Because McDonnell needs to seize the means of production.", "follow":{"class": "strongandstable", "text": "Because ... Oh, no, wait. we don't want that."}}
 ]
 var classMap = {
 	"strongandstable": "Tory",
 	"commies": "Labour"
 }
+timeout = null;
 
-var changeIt = function(text){
+var changeIt = function(text, item){
+	if(!item){
+		clearTimeout(timeout);
+		var item = garbageList[Math.floor(Math.random()*garbageList.length)];
+	}
 	var vote = $('#vote');
-	var item = garbageList[Math.floor(Math.random()*garbageList.length)];
 	var voteString = "vote<h1>"+classMap[item["class"]]+"</h1>to stop the not Tories in "+text;
 	vote.html(voteString);
 	document.body.className = "";
 	$("body").addClass(item["class"]);
 	$("#why").html("Why? "+item["text"]);
+	if(item.follow){
+		console.log(item.follow);
+		timeout = setTimeout(function(){changeIt(text, item.follow)}, 2500);
+	}
 }
 
 var getPostcode = function(){
