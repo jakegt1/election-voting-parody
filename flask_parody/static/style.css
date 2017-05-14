@@ -123,6 +123,10 @@ body {
 	}
 }
 
+input[type=text] {
+	text-transform: uppercase;
+}
+
 .about {
 	text-align: left;
 }
