@@ -6,7 +6,7 @@ var garbageList = [
 	{"class": "commies", "text": "Well, it's not going to make any difference anyway. Have you seen the polls? Jesus."},
 	{"class": "commies", "text": "Because McDonnell needs to seize the means of production.", "follow":{"class": "strongandstable", "text": "Because ... Oh, no, wait. we don't want that."}},
     {"class": "strongandstable", "text": "Because we don't want Diane Abbot to make another damn blunder... Or do we?"},
-    {"class": "commies", "text": "Because Theresa May is snooping our data!", "follow"{"class": "strongandstable", "text": "Because.. err.. Strong and stable! Strong and stable!"}}
+    {"class": "commies", "text": "Because Theresa May is snooping our data!", "follow": {"class": "strongandstable", "text": "Because.. err.. Strong and stable! Strong and stable!"}},
 ]
 var classMap = {
 	"strongandstable": "Tory",
@@ -26,7 +26,6 @@ var changeIt = function(text, item){
 	$("body").addClass(item["class"]);
 	$("#why").html("Why? "+item["text"]);
 	if(item.follow){
-		console.log(item.follow);
 		timeout = setTimeout(function(){changeIt(text, item.follow)}, 2500);
 	}
 }
