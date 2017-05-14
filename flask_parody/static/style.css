@@ -124,3 +124,12 @@ body {
 	padding: 0 94px 0 94px;
 }
 
+.about a {
+	color: #44aaff
+}
+
+.about a:hover {
+	color: #337ab7;
+}
+
+
