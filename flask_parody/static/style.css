@@ -86,6 +86,14 @@ body {
 	background: #d50000;
 }
 
+.tuitionfees {
+	background: #FDBB30;
+}
+
+.ukeep {
+	background: #B3009D;
+}
+
 .inner-content {
 	margin: 0 auto;
 	max-width: 800px;

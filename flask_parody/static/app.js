@@ -6,11 +6,18 @@ var garbageList = [
 	{"class": "commies", "text": "Because we actually need an opposition in this country.", "follow": {"class": "strongandstable", "text": "Because, actually, I just remembered I have some foxes to hunt. Cheerio!"}},
 	{"class": "commies", "text": "Because McDonnell needs to seize the means of production.", "follow":{"class": "strongandstable", "text": "Because ... Oh, no, wait. we don't want that."}},
     {"class": "strongandstable", "text": "Because we don't want Diane Abbot to make another damn blunder... Or do we?"},
+    {"class": "strongandstable", "text": "Because the NHS is going to die before I need it anyway. YOLO."},
     {"class": "commies", "text": "Because Theresa May is snooping our data!", "follow": {"class": "strongandstable", "text": "Because.. err.. Strong and stable! Strong and stable!"}},
+    {"class": "tuitionfees", "text": "Because they have sensible policies.", "follow": {"class": "strongandstable", "text": "Because, well, tuition fees."}},
+    {"class": "tuitionfees", "text": "Because blindsiding 52% of the population is good electoral strategy."},
+    {"class": "ukeep", "text": "Выполнить заказ шестьдесят шесть", "follow": {"class": "strongandstable", "text": "Because they're not right enough to be helped by Putin."}},
+    {"class": "ukeep", "text": "Because they're not done yet. Apparently."}
 ]
 var classMap = {
 	"strongandstable": "Tory",
-	"commies": "Labour"
+    "commies": "Labour",
+    "tuitionfees": "Lib Dem",
+    "ukeep": "UKIP"
 }
 timeout = null;
 
