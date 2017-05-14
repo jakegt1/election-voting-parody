@@ -4,7 +4,9 @@ var garbageList = [
 	{"class": "strongandstable", "text": "Because that labour guy ate that bacon sandwich funny once."},
 	{"class": "strongandstable", "text": "Because brexit means brexit, and election means tory government."},
 	{"class": "commies", "text": "Well, it's not going to make any difference anyway. Have you seen the polls? Jesus."},
-	{"class": "commies", "text": "Because McDonnell needs to seize the means of production.", "follow":{"class": "strongandstable", "text": "Because ... Oh, no, wait. we don't want that."}}
+	{"class": "commies", "text": "Because McDonnell needs to seize the means of production.", "follow":{"class": "strongandstable", "text": "Because ... Oh, no, wait. we don't want that."}},
+    {"class": "strongandstable", "text": "Because we don't want Diane Abbot to make another damn blunder... Or do we?"},
+    {"class": "commies", "text": "Because Theresa May is snooping our data!", "follow"{"class": "strongandstable", "text": "Because.. err.. Strong and stable! Strong and stable!"}}
 ]
 var classMap = {
 	"strongandstable": "Tory",
